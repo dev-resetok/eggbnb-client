@@ -59,7 +59,7 @@ const Main = () => {
     const [roomList, setRoomList] = useState([]);
     useEffect(()=>{
         const getRoomList = async () => {
-            const response = await fetch(`http://localhost:8000/room/?${searchParams}`);
+            const response = await fetch(`https://port-0-eggbnb-server-ly8jjkrt043c2434.sel5.cloudtype.app/room/?${searchParams}`);
             const room = response.json();
             return room;
         };

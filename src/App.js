@@ -27,7 +27,7 @@ function App() {
           return;
         }
         
-        const response = await fetch('http://localhost:8000/user/auth', {
+        const response = await fetch('https://port-0-eggbnb-server-ly8jjkrt043c2434.sel5.cloudtype.app/user/auth', {
           method : 'POST',
           headers : {
             'Authorization' : `Bearer ${localStorage.getItem('token')}`,

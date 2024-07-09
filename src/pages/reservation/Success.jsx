@@ -20,14 +20,14 @@ const Success = () => {
     const token = localStorage.getItem("token");
 
     // const bookingData = async() => {
-    //     const response = await fetch(`http://localhost:8000/booking/reservation/success?guests=${guests}&infants=${infants}&userId=${userId}&roomId=${roomId}&createdAt=${createdAt}&updatedAt=${updatedAt}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`);
+    //     const response = await fetch(`https://port-0-eggbnb-server-ly8jjkrt043c2434.sel5.cloudtype.app/booking/reservation/success?guests=${guests}&infants=${infants}&userId=${userId}&roomId=${roomId}&createdAt=${createdAt}&updatedAt=${updatedAt}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}`);
     // };
 
     useEffect(() => {
 
         // bookingList fetch() 보내기
         async function bookingData () {
-            const response = await fetch(`http://localhost:8000/booking/bookingsuccess`, {
+            const response = await fetch(`https://port-0-eggbnb-server-ly8jjkrt043c2434.sel5.cloudtype.app/booking/bookingsuccess`, {
                 method: 'POST',
                 body: JSON.stringify({
                     roomId: roomId,
